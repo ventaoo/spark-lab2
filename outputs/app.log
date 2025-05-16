@@ -28,3 +28,27 @@
 [2025-04-24 12:56:06,565] [INFO] - 模型保存成功: /Users/zwt/Desktop/github_project/spark-lab/models/kmeans_12:56:05
 [2025-04-24 12:56:51,315] [INFO] - [INFO] 聚类图已保存至：/Users/zwt/Desktop/github_project/spark-lab/outputs/pca_clusters.png
 [2025-04-24 12:56:51,372] [INFO] - [INFO] 聚类数量条形图已保存至：/Users/zwt/Desktop/github_project/spark-lab/outputs/cluster_counts.png
+[2025-05-06 06:28:57,619] [INFO] - 程序启动，开始加载配置
+[2025-05-06 06:28:57,620] [INFO] - Spark log save to: /app/outputs/spark-events
+[2025-05-06 06:28:58,439] [INFO] - Spark session created...
+[2025-05-06 06:30:46,263] [INFO] - Model start training...
+[2025-05-06 06:33:51,042] [INFO] - Inertia: 400268.73
+[2025-05-06 06:33:51,086] [ERROR] - 保存模型失败: An error occurred while calling o283.save.
+: java.io.IOException: Path hdfs://namenode:9000/lab6/output/model already exists. To overwrite it, please use write.overwrite().save(path) for Scala and use write().overwrite().save(path) for Java and Python.
+	at org.apache.spark.ml.util.FileSystemOverwrite.handleOverwrite(ReadWrite.scala:683)
+	at org.apache.spark.ml.util.MLWriter.save(ReadWrite.scala:167)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[2025-05-16 19:55:04,892] [INFO] - 程序启动，开始加载配置
+[2025-05-16 19:55:04,893] [INFO] - Spark log save to: /app/outputs/spark-events
